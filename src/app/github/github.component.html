@@ -1,0 +1,23 @@
+<h3>HttpClient Service</h3>
+<br>
+<p>Github api is being used in this demo</p>
+<div>
+  User name: <input type="text" [(ngModel)]="userName">
+  <button (click)="search()">Search</button>
+</div>
+<br>
+<!-- 
+Search for these names: (just examples)
+  Ahmad-saleh89
+  ychaikin
+  ilkswiss
+  hipoyang
+-->
+
+
+<ul *ngIf="user">
+  <li>User id: {{ user.id }}</li>
+  <li>User Name: {{ user.login }}</li>
+  <li>Followers: {{ user.followers }}</li>
+  <li>Following: {{ user.following }}</li>
+</ul>
