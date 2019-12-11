@@ -13,12 +13,15 @@ import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
 import { EmployeeDetailComponent } from './employees/employee-detail/employee-detail.component';
 import { EmployeeService } from './employees/employee.service';
+import { TeacherComponent } from './subject/teacher/teacher.component';
+import { Student1Component } from './subject/student-1/student-1.component';
+import { InteractionService } from './subject/interaction.service';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule ],
-  declarations: [ AppComponent, AccountComponent, NewAccountComponent, GithubComponent, EmployeesComponent, EmployeeListComponent, EmployeeDetailComponent ],
+  declarations: [ AppComponent, AccountComponent, NewAccountComponent, GithubComponent, EmployeesComponent, EmployeeListComponent, EmployeeDetailComponent, TeacherComponent, Student1Component ],
   bootstrap:    [ AppComponent ],
-  providers: [LoggingService, AccountsService, EmployeeService]
+  providers: [LoggingService, AccountsService, EmployeeService, InteractionService]
 })
 export class AppModule { }
